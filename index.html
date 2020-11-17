@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Materialize CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Task List</title>
 </head>
@@ -15,38 +17,47 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12">
-                <div id="main" class="card">
-                    <div class="card-content">
-                        <span class="card-title">Task List</span>
-                        <div class="row">
-                            <form id="task-form">
-                                <div class="input-field col s12">
 
-                                    <input type="text" name="task" id="task">
-                                    <label for="task">New Task</label>
-                                </div>
-                                <input type="submit" value="add Task" class="btn">
+            <div class="col s12"></div>
+            <div id="main" class="card">
 
+                <div class="card-content">
+                    <span class="card-title">Task List</span>
+                    <div class="row">
+                        <form id="task-form">
 
+                            <div class="input-field col1 s12">
 
-                            </form>
-                        </div>
+                                <input type="text" name="task" id="task">
+                                <label for="task">Add Task</label>
+                                <input type="button" value="Add Task" class="btn">
+                            </div>
+                        </form>
+
                     </div>
                 </div>
-                <div class="card-action">
-                    <h5 id="task">Tasks</h5>
-                    <div class="input-field col s12">
-                        <input type="text" name="filter" id="filter">
-                        <label for="filter">filter Tasks</label>
-                    </div>
-                    <ul class="collection"></ul>
-                    <a href="#" class="clear-tasks btn black">clear Tasks</a>
-                </div>
-
-
             </div>
 
+            <!--  -->
+
+            <div class="card-action">
+                <h5 id="task-title">Tasks</h5>
+                <form>
+
+                    <div class="input-field col1 s12">
+
+                        <input type="text" name="filter" id="filter">
+                        <label for="filter">Filter Tasks</label>
+                    </div>
+                </form>
+
+                <ul class="collection"> </ul>
+
+
+                    <a href="#" class="clear-task btn black">Clear Task</a>
+
+            </div>
+            </div>
         </div>
     </div>
 
@@ -56,21 +67,16 @@
 
 
 
-
-
-
-
-
-
-
-    <!-- Jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-    <!-- Compiled and minified JavaScript -->
+<!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+
+    <!-- Script tag -->
     <script src="app.js"></script>
+    
+
 </body>
 
 </html>
