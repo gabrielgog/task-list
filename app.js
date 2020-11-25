@@ -10,29 +10,28 @@ const filter = document.querySelector('#filter');
 
 // Load all event Listeners
 
-loadEventListeners();
+loadEventListeners()
 
 // Load all event Listeners
 
 function loadEventListeners(){
-    // Add Task event
-
-    form.addEventListener('submit', addTask)
 
 
+    form.addEventListener('Submit', addTask)
 }
+
+
 // Add Task
 
 function addTask(e){
 
-    if(taskInput.value === ""){
-        alert('Add a Task')
+    if(taskInput.value === ''){
+        alert('Add a Task');
     }
 
 
 
+
     e.preventDefault();
-
-
 
 }
